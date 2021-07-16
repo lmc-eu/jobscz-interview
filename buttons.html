@@ -1,0 +1,13 @@
+<input name="myButton" type="button" value="button 1">
+<input name="myButton" type="button" value="button 2">
+<input name="myButton" type="button" value="button 3">
+
+<script type="text/javascript">
+    var buttons = document.getElementsByName("myButton");
+
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].onclick = function () {
+            window.alert("clicked button " + (i + 1));
+        };
+    }
+</script>
